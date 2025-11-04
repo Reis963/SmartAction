@@ -1,3 +1,16 @@
+# Build output
 bin/
 obj/
-libs/
+
+# VS files
+.vs/
+*.user
+*.suo
+
+# Backup & cache
+*.bak
+*.tmp
+
+# Ignore any game DLLs accidentally copied
+*.dll
+!SmartAction.dll

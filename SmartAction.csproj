@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>SmartAction</AssemblyName>
+    <RootNamespace>SmartAction</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>disable</Nullable>
+
+    <!-- prevent copying of reference DLLs -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <!-- Typical references for BepInEx/SPT plugins -->
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>References\Bepinex\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>References\Bepinex\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>References\Tarkov\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Comfort.Common">
+      <HintPath>References\Tarkov\Comfort.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>References\Tarkov\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Automatically include all .cs files -->
+  <ItemGroup>
+    <Compile Include="**\*.cs" />
+  </ItemGroup>
+
+  <!-- Output path: directly to where BepInEx loads plugins -->
+  <PropertyGroup>
+    <OutputPath>..\..\SPT\BepInEx\plugins\SmartAction\</OutputPath>
+  </PropertyGroup>
+</Project>
