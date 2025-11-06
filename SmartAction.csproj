@@ -25,9 +25,11 @@
       <HintPath>References\Tarkov\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <Reference Include="Comfort.Common">
-      <HintPath>References\Tarkov\Comfort.Common.dll</HintPath>
-      <Private>false</Private>
+    <Reference Include="Comfort">
+      <HintPath>References\Tarkov\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>References\Tarkov\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>References\Tarkov\UnityEngine.CoreModule.dll</HintPath>

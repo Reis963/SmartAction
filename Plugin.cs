@@ -59,7 +59,7 @@ namespace SmartAction
                 File.WriteAllText(PathsFile.LogFilePath, "");
             }
         
-            Logger.LogInfo("Log dans le fichier :" + PathsFile.LogFilePath);
+            Logger.LogInfo("Log in the file :" + PathsFile.LogFilePath);
         }
 
         private void InitializeLogger()

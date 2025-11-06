@@ -98,7 +98,7 @@ public static class PatchMedEffectHooks
                 var key = (medItem, effect.State);
 
                 var float12Field = ReflectionUtils.GetOrCacheField(__instance.GetType(), "float_12");
-                var workStateTimeProperty = ReflectionUtils.GetOrCacheProperty(typeof(ActiveHealthController.GClass2813), "WorkStateTime");
+                var workStateTimeProperty = ReflectionUtils.GetOrCacheProperty(typeof(ActiveHealthController.GClass3008), "WorkStateTime");
 
                 if (float12Field?.GetValue(__instance)
                         is not (float float12 and > 0f and < 20f) ||
